@@ -26,6 +26,7 @@ $primaryCollor :#5E4BF5;
         &.navbarOnScrolled {
             background-color: $white;
             transition: .3s ease;
+            box-shadow: 0px 52px 80px rgba(0, 0, 0, 0.0139364), 0px 15.6765px 24.1177px rgba(0, 0, 0, 0.02), 0px 6.51121px 10.0172px rgba(0, 0, 0, 0.0260636), 0px 2.35498px 3.62304px rgba(0, 0, 0, 0.04);
         }
         .container {
             display: flex;
@@ -226,6 +227,11 @@ $primaryCollor :#5E4BF5;
             .wrapperContent {
                 .content {
                     color: #4B4D4C;
+                    h1 {
+                        .textPrimary {
+                            color: $primaryCollor;
+                        }
+                    }
                     .wrapperButton {
                         a {
                             background-color: $primaryCollor;
@@ -320,6 +326,9 @@ $primaryCollor :#5E4BF5;
                             margin-bottom: 1rem;
                         }
                         .wrapperButton {
+                            a {
+                                font-size: 16px;
+                            }
                         }
                         .imagesContent {
                             img {
@@ -343,15 +352,17 @@ $primaryCollor :#5E4BF5;
                     .content {
                         width: 100%;
                         h1 {
-                            font-size: 38px;
+                            font-size: 32px;
                         }
                         p {
                             margin-bottom: 2rem;
                         }
-                        .wrapperButton {
-                        }
-                        .imagesContent {
-                        }
+                    }
+                    .textContent {
+                        width: 45%;
+                    }
+                    .iconImagesContent {
+                        width: 55%;
                     }
                 }
             }
@@ -366,7 +377,7 @@ $primaryCollor :#5E4BF5;
                 .wrapperContent {
                     .content {
                         h1 {
-                            font-size: 46px;
+                            font-size: 42px;
                         }
                         p {
                             font-size: 18px;
@@ -375,8 +386,6 @@ $primaryCollor :#5E4BF5;
                             a {
                                 font-size: 18px;
                             }
-                        }
-                        .imagesContent {
                         }
                     }
                 }
@@ -394,12 +403,12 @@ $primaryCollor :#5E4BF5;
                             font-size: 52px;
                         }
                         p {
-                            font-size: 22px;
+                            font-size: 20px;
                             line-height: 36px;
                         }
                         .wrapperButton {
                             a {
-                                font-size: 18px4
+                                font-size: 18px;
                             }
                         }
                         .imagesContent {
@@ -419,7 +428,7 @@ $primaryCollor :#5E4BF5;
                 max-width: 28px !important;
             }
             .infoUser {
-                padding-left: 1rem;
+                padding-left: .5rem !important;
                 h5 {
                     font-size: 12px !important;
                 }
@@ -437,6 +446,34 @@ $primaryCollor :#5E4BF5;
         .rating {
             img {
                 max-width: 12px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width :567px) {
+    .review {
+        .profileUser {
+            img {
+                max-width: 24px !important;
+            }
+            .infoUser {
+                h5 {
+                    font-size: 10px !important;
+                }
+                p {
+                    font-size: 8px !important;
+                }
+            }
+        }
+        .comment {
+            p {
+                font-size: 8px !important;
+                max-width: 115px !important;
+            }
+        }
+        .rating {
+            img {
+                max-width: 10px !important;
             }
         }
     }

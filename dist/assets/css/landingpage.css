@@ -22,6 +22,7 @@ body {
 #app #navbarContainer.navbarOnScrolled {
   background-color: #fff;
   transition: .3s ease;
+  box-shadow: 0px 52px 80px rgba(0, 0, 0, 0.0139364), 0px 15.6765px 24.1177px rgba(0, 0, 0, 0.02), 0px 6.51121px 10.0172px rgba(0, 0, 0, 0.0260636), 0px 2.35498px 3.62304px rgba(0, 0, 0, 0.04);
 }
 
 #app #navbarContainer .container {
@@ -202,6 +203,10 @@ body {
   color: #4B4D4C;
 }
 
+#app #jumbotron .container .wrapperContent .content h1 .textPrimary {
+  color: #5E4BF5;
+}
+
 #app #jumbotron .container .wrapperContent .content .wrapperButton a {
   background-color: #5E4BF5;
   color: #fff;
@@ -296,6 +301,9 @@ body {
   #app #jumbotron .container .wrapperContent .content p {
     margin-bottom: 1rem;
   }
+  #app #jumbotron .container .wrapperContent .content .wrapperButton a {
+    font-size: 16px;
+  }
   #app #jumbotron .container .wrapperContent .content .imagesContent img {
     width: 100%;
   }
@@ -310,16 +318,22 @@ body {
     width: 100%;
   }
   #app #jumbotron .container .wrapperContent .content h1 {
-    font-size: 38px;
+    font-size: 32px;
   }
   #app #jumbotron .container .wrapperContent .content p {
     margin-bottom: 2rem;
+  }
+  #app #jumbotron .container .wrapperContent .textContent {
+    width: 45%;
+  }
+  #app #jumbotron .container .wrapperContent .iconImagesContent {
+    width: 55%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #app #jumbotron .container .wrapperContent .content h1 {
-    font-size: 46px;
+    font-size: 42px;
   }
   #app #jumbotron .container .wrapperContent .content p {
     font-size: 18px;
@@ -334,11 +348,11 @@ body {
     font-size: 52px;
   }
   #app #jumbotron .container .wrapperContent .content p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 36px;
   }
   #app #jumbotron .container .wrapperContent .content .wrapperButton a {
-    font-size: 18px4;
+    font-size: 18px;
   }
 }
 
@@ -350,7 +364,7 @@ body {
     max-width: 28px !important;
   }
   .review .profileUser .infoUser {
-    padding-left: 1rem;
+    padding-left: .5rem !important;
   }
   .review .profileUser .infoUser h5 {
     font-size: 12px !important;
@@ -364,6 +378,25 @@ body {
   }
   .review .rating img {
     max-width: 12px !important;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .review .profileUser img {
+    max-width: 24px !important;
+  }
+  .review .profileUser .infoUser h5 {
+    font-size: 10px !important;
+  }
+  .review .profileUser .infoUser p {
+    font-size: 8px !important;
+  }
+  .review .comment p {
+    font-size: 8px !important;
+    max-width: 115px !important;
+  }
+  .review .rating img {
+    max-width: 10px !important;
   }
 }
 
