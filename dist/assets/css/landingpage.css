@@ -17,6 +17,7 @@ body {
   padding: 1.4rem 0;
   background-color: transparent;
   transition: .3s ease;
+  z-index: 1000000;
 }
 
 #app #navbarContainer.navbarOnScrolled {
@@ -212,8 +213,8 @@ body {
   color: #fff;
   font-size: 16px;
   text-decoration: none;
-  padding: 8px 20px;
-  border-radius: 10px;
+  padding: 10px 28px;
+  border-radius: 20px;
   font-weight: 400;
   transition: .3s ease;
   display: block;
@@ -387,6 +388,7 @@ body {
   }
   .review .profileUser .infoUser h5 {
     font-size: 10px !important;
+    margin-bottom: 2px  !important;
   }
   .review .profileUser .infoUser p {
     font-size: 8px !important;
@@ -397,6 +399,17 @@ body {
   }
   .review .rating img {
     max-width: 10px !important;
+  }
+  .textContent {
+    text-align: center;
+  }
+  .textContent .wrapperButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textContent .wrapperButton a {
+    font-size: 14px !important;
   }
 }
 
