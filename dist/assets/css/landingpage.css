@@ -98,6 +98,12 @@ body {
 
 /*Responsive Navbar*/
 @media screen and (max-width: 991px) {
+  #app #navbarContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: .5s ease;
+  }
   #app #navbarContainer .container {
     transition: .5s ease;
   }
@@ -108,7 +114,7 @@ body {
     padding: 2rem;
     position: absolute;
     left: -100px;
-    top: 35%;
+    top: 50%;
     background-color: #fff;
     transition: left .5s ease;
     border-radius: 20px;
@@ -186,3 +192,179 @@ body {
     font-weight: 500;
   }
 }
+
+/*Jumbotron*/
+#app #jumbotron {
+  padding: 7rem 0;
+}
+
+#app #jumbotron .container .wrapperContent .content {
+  color: #4B4D4C;
+}
+
+#app #jumbotron .container .wrapperContent .content .wrapperButton a {
+  background-color: #5E4BF5;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: .3s ease;
+  display: block;
+  width: fit-content;
+}
+
+#app #jumbotron .container .wrapperContent .content .wrapperButton a:hover {
+  box-shadow: 2px 4px 4px rgba(94, 75, 245, 0.5);
+  transition: .3s ease;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent {
+  position: relative;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent img {
+  width: 100%;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review {
+  background: #FFFFFF;
+  box-shadow: 0px -8px 80px rgba(94, 75, 245, 0.06), 0px -3.34221px 33.4221px rgba(94, 75, 245, 0.0431313), 0px -1.7869px 17.869px rgba(94, 75, 245, 0.0357664), 0px -1.00172px 10.0172px rgba(94, 75, 245, 0.03), 0px -0.53201px 5.32008px rgba(94, 75, 245, 0.0242336), 0px -0.22138px 2.21381px rgba(94, 75, 245, 0.0168687);
+  border-radius: 10px;
+  padding: 1rem;
+  width: fit-content;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .profileUser {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .profileUser img {
+  width: 100%;
+  max-width: 44px;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .profileUser .infoUser {
+  padding-left: 1rem;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .profileUser .infoUser h5 {
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .profileUser .infoUser p {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: normal;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .comment {
+  margin-bottom: .5rem;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .comment p {
+  max-width: 200px;
+  font-size: 14px;
+  margin: 0;
+  line-height: normal;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .rating {
+  display: flex;
+}
+
+#app #jumbotron .container .wrapperContent .content .imagesContent .review .rating img {
+  width: 100%;
+  max-width: 18px;
+}
+
+/*End Jumbotron*/
+/*Responsive Jumbotron*/
+@media screen and (min-width: 0px) {
+  #app #jumbotron .container .wrapperContent .content h1 {
+    margin-bottom: 1rem;
+  }
+  #app #jumbotron .container .wrapperContent .content p {
+    margin-bottom: 1rem;
+  }
+  #app #jumbotron .container .wrapperContent .content .imagesContent img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #app #jumbotron .container .wrapperContent {
+    display: flex;
+    align-items: center;
+  }
+  #app #jumbotron .container .wrapperContent .content {
+    width: 100%;
+  }
+  #app #jumbotron .container .wrapperContent .content h1 {
+    font-size: 38px;
+  }
+  #app #jumbotron .container .wrapperContent .content p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #app #jumbotron .container .wrapperContent .content h1 {
+    font-size: 46px;
+  }
+  #app #jumbotron .container .wrapperContent .content p {
+    font-size: 18px;
+  }
+  #app #jumbotron .container .wrapperContent .content .wrapperButton a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #app #jumbotron .container .wrapperContent .content h1 {
+    font-size: 52px;
+  }
+  #app #jumbotron .container .wrapperContent .content p {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  #app #jumbotron .container .wrapperContent .content .wrapperButton a {
+    font-size: 18px4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review .profileUser {
+    margin-bottom: .5rem !important;
+  }
+  .review .profileUser img {
+    max-width: 28px !important;
+  }
+  .review .profileUser .infoUser {
+    padding-left: 1rem;
+  }
+  .review .profileUser .infoUser h5 {
+    font-size: 12px !important;
+  }
+  .review .profileUser .infoUser p {
+    font-size: 10px !important;
+  }
+  .review .comment p {
+    font-size: 10px !important;
+    max-width: 140px !important;
+  }
+  .review .rating img {
+    max-width: 12px !important;
+  }
+}
+
+/*Responsive Jumbotron*/
