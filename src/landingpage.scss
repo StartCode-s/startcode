@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*,::before,::after,h1,h2,h3,h4,h5,h6,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #F6F8FD;
+}
+/*Variable Collor*/
+$white : #fff;
+$primaryCollor :#5E4BF5;
+
+
+
+/*Navbar Style*/
+#app {
+    #navbarContainer {
+        padding: 1.4rem 0;
+        background-color: transparent;
+        transition: .3s ease;
+        &.navbarOnScrolled {
+            background-color: $white;
+            transition: .3s ease;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .brand {
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    .brandImages {
+                        width: 100%;
+                        max-width: 38px;
+                        margin-right: .7rem;
+                    }
+                    .nameBrand {
+                        font-weight: 600;
+                        color: $primaryCollor;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+            .navMenu {
+                .buttonNavbarMenu {
+                    display: none;
+                    background: transparent;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 6px 10px;
+                    border: 1px solid rgb(208, 208, 208);
+                    border-radius: 10px;
+                    transition: .3s ease;
+
+                    &.activeButton {
+                        background-color: $primaryCollor;
+                        border: 1px solid #6b58f7;
+                        ion-icon {
+                            color: $white;
+                        }
+                    }
+                    &:hover {
+                        background-color: $primaryCollor;
+                        border: 1px solid #6b58f7;
+                        transition: .3s ease;
+                        ion-icon {
+                            color: $white;
+                            transition: .3s ease;
+                        }
+                    }
+                    ion-icon {
+                        font-size: 32px;
+                        transition: .3s ease;
+                    }
+                }
+                .containerMenu {
+                    .wrapperMenu {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        .list-menu {
+                            .nav-menu {
+                                text-decoration: none;
+                                color: #4B4D4C;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Responsive Navbar*/
+@media screen and (max-width : 991px) {
+    #app {
+        #navbarContainer {
+            .container {
+                transition: .5s ease;
+                .navMenu {
+                    .buttonNavbarMenu {
+                        display: flex;
+                    }
+                    .containerMenu {
+                        padding: 2rem;
+                        position: absolute;
+                        left: -100px;
+                        top: 35%;
+                        background-color: $white;
+                        transition: left .5s ease;
+                        border-radius: 20px;
+                        &.containerMenuActive {
+                            left: 20px;
+                            transition: left .5s ease;
+                        }
+                        .wrapperMenu {
+                            .list-menu {
+                                padding: .8rem 0;
+                                .nav-menu {
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+                                    ion-icon {
+                                        font-size: 22px;
+                                    }
+                                    p {
+                                        display: none;
+                                    }
+
+                                    &.active {
+                                        ion-icon {
+                                            color: $primaryCollor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 992px) {
+    #app {
+        #navbarContainer {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: .5s ease;
+            .container {
+                transition: .5s ease;
+                .brand {
+                    a {
+                        .nameBrand {
+                            font-size: 32px;
+                        }
+                    }
+                }
+                .navMenu {
+                    .buttonNavbarMenu {
+                        display: none;
+                    }
+                    .containerMenu {
+                        .wrapperMenu {
+                            display: flex;
+                            align-items: center;
+                            .list-menu {
+                                padding: 0 .8rem;
+                                .nav-menu {
+                                    ion-icon {
+                                        display: none;
+                                    }
+                                    p {
+                                        position: relative;
+                                        &::after {
+                                            content: '';
+                                            display: block;
+                                            height: 2px;
+                                            position: absolute;
+                                            bottom: -5px;
+                                            width: 0%;
+                                            transform: translateX(0%);
+                                            background-color: $primaryCollor;
+                                            transition: .3s ease;
+                                        }
+                                        &:hover {
+                                            &::after {
+                                                width: 50%;
+                                                transform: translateX(50%);
+                                                transition: .3s ease;
+                                            }
+                                        }
+                                    }
+                                    &.active {
+                                        color: $primaryCollor;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

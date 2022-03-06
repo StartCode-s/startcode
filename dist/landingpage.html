@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landingpage StartCode</title>
+
+    <!--Vendor CSS-->
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+        <!--Slick Css-->
+        <link rel="stylesheet" href="./assets/vendor/slick/slick.css">
+        <link rel="stylesheet" href="./assets/vendor/slick/slick-theme.css">
+    <!--Css This Pages-->
+    <link rel="stylesheet" href="./assets/css/landingpage.css">
+</head>
+<body>
+
+    <div id="app">
+        <!--Navbar-->
+        <div id="navbarContainer">
+            <div class="container">
+                <div class="brand">
+                    <a href="#">
+                        <img src="./assets/images/logoStartCode_WithoutName.png" alt="" class="brandImages">
+                        <h2 class="nameBrand">StartCode</h2>
+                    </a>
+                </div>
+                <div class="navMenu">
+                    <button class="buttonNavbarMenu">
+                        <ion-icon name="reorder-three-outline"></ion-icon>
+                    </button>
+                    <div class="containerMenu">
+                        <ul class="wrapperMenu">
+                            <li class="list-menu">
+                                <a href="#" class="nav-menu active">
+                                    <ion-icon name="home"></ion-icon>
+                                    <p>Home</p>
+                                </a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="#" class="nav-menu">
+                                    <ion-icon name="construct"></ion-icon>
+                                    <p>Service</p>
+                                </a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="#" class="nav-menu">
+                                    <ion-icon name="cube"></ion-icon>
+                                    <p>Project</p>
+                                </a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="#" class="nav-menu">
+                                    <ion-icon name="call"></ion-icon>
+                                    <p>Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--EndNavbar-->
+    </div>
+    
+
+
+
+    <!--Vendor JS-->
+        <!--Jquery-->
+        <script src="./assets/vendor/jquery/jquery.min.js"></script>
+        <!--Bootstrap Js-->
+        <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Slick Js-->
+        <script src="./assets/vendor/slick/slick.min.js"></script>
+        <!--Ion Icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--Js This Pages-->
+    <script>
+        //Nav SideBar Menu Active 
+            $('.buttonNavbarMenu').click(function() {
+                $('.containerMenu').toggleClass('containerMenuActive');
+            });
+            $('.buttonNavbarMenu').click(function() {
+                $('.buttonNavbarMenu').toggleClass('activeButton');
+            });
+        //On Scrool Effect
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            if (scroll >= 10) {
+                $("#navbarContainer").addClass("navbarOnScrolled");
+            } else {
+                $("#navbarContainer").removeClass("navbarOnScrolled");
+            }
+        });
+    </script>
+</body>
+</html>

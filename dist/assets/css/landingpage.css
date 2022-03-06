@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*, ::before, ::after, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F6F8FD;
+}
+
+/*Variable Collor*/
+/*Navbar Style*/
+#app #navbarContainer {
+  padding: 1.4rem 0;
+  background-color: transparent;
+  transition: .3s ease;
+}
+
+#app #navbarContainer.navbarOnScrolled {
+  background-color: #fff;
+  transition: .3s ease;
+}
+
+#app #navbarContainer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app #navbarContainer .container .brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#app #navbarContainer .container .brand a .brandImages {
+  width: 100%;
+  max-width: 38px;
+  margin-right: .7rem;
+}
+
+#app #navbarContainer .container .brand a .nameBrand {
+  font-weight: 600;
+  color: #5E4BF5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#app #navbarContainer .container .navMenu .buttonNavbarMenu {
+  display: none;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+
+#app #navbarContainer .container .navMenu .buttonNavbarMenu.activeButton {
+  background-color: #5E4BF5;
+  border: 1px solid #6b58f7;
+}
+
+#app #navbarContainer .container .navMenu .buttonNavbarMenu.activeButton ion-icon {
+  color: #fff;
+}
+
+#app #navbarContainer .container .navMenu .buttonNavbarMenu:hover {
+  background-color: #5E4BF5;
+  border: 1px solid #6b58f7;
+  transition: .3s ease;
+}
+
+#app #navbarContainer .container .navMenu .buttonNavbarMenu:hover ion-icon {
+  color: #fff;
+  transition: .3s ease;
+}
+
+#app #navbarContainer .container .navMenu .buttonNavbarMenu ion-icon {
+  font-size: 32px;
+  transition: .3s ease;
+}
+
+#app #navbarContainer .container .navMenu .containerMenu .wrapperMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu {
+  text-decoration: none;
+  color: #4B4D4C;
+  font-weight: 300;
+}
+
+/*Responsive Navbar*/
+@media screen and (max-width: 991px) {
+  #app #navbarContainer .container {
+    transition: .5s ease;
+  }
+  #app #navbarContainer .container .navMenu .buttonNavbarMenu {
+    display: flex;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu {
+    padding: 2rem;
+    position: absolute;
+    left: -100px;
+    top: 35%;
+    background-color: #fff;
+    transition: left .5s ease;
+    border-radius: 20px;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu.containerMenuActive {
+    left: 20px;
+    transition: left .5s ease;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu {
+    padding: .8rem 0;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu ion-icon {
+    font-size: 22px;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu p {
+    display: none;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu.active ion-icon {
+    color: #5E4BF5;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #app #navbarContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: .5s ease;
+  }
+  #app #navbarContainer .container {
+    transition: .5s ease;
+  }
+  #app #navbarContainer .container .brand a .nameBrand {
+    font-size: 32px;
+  }
+  #app #navbarContainer .container .navMenu .buttonNavbarMenu {
+    display: none;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu {
+    display: flex;
+    align-items: center;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu {
+    padding: 0 .8rem;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu ion-icon {
+    display: none;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu p {
+    position: relative;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu p::after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    transform: translateX(0%);
+    background-color: #5E4BF5;
+    transition: .3s ease;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu p:hover::after {
+    width: 50%;
+    transform: translateX(50%);
+    transition: .3s ease;
+  }
+  #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu.active {
+    color: #5E4BF5;
+    font-weight: 500;
+  }
+}
