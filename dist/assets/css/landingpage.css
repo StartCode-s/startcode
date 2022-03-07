@@ -440,6 +440,12 @@ body {
   #service {
     padding: 7rem 0;
   }
+  #service .serviceContainer .titleSection {
+    margin-bottom: 1.5rem;
+  }
+  #service .serviceContainer .titleSection h2 {
+    font-size: 22px;
+  }
   #service .serviceContainer .bodySectionService .service {
     margin: 1rem 0;
   }

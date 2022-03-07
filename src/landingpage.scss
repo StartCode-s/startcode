@@ -536,7 +536,9 @@ $primaryCollor :#5E4BF5;
         padding: 7rem 0;
         .serviceContainer {
             .titleSection {
-                .textPrimary {
+                margin-bottom: 1.5rem;
+                h2 {
+                    font-size: 22px;
                 }
             }
             .bodySectionService {
