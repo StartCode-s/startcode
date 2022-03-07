@@ -420,6 +420,7 @@ body {
 
 #service .serviceContainer .titleSection {
   text-align: center;
+  color: #4B4D4C;
 }
 
 #service .serviceContainer .titleSection .textPrimary {
@@ -427,15 +428,24 @@ body {
   font-weight: 600;
 }
 
+#service .serviceContainer .bodySectionService .col-6, #service .serviceContainer .bodySectionService .col-12 {
+  transition: .5s ease;
+}
+
 #service .serviceContainer .bodySectionService .service .imageService img {
   width: 100%;
+  transition: .3s ease;
 }
 
 #service .serviceContainer .bodySectionService .service .infoService {
   color: #4B4D4C;
 }
 
-/*Responsive*/
+#service .serviceContainer .bodySectionService .service .infoService h3 {
+  font-weight: 500;
+}
+
+/*Responsive Service*/
 @media screen and (min-width: 0px) {
   #service {
     padding: 7rem 0;
@@ -458,5 +468,249 @@ body {
   }
   #service .serviceContainer .bodySectionService .service .infoService p {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #service .serviceContainer .titleSection {
+    margin-bottom: 2rem;
+  }
+  #service .serviceContainer .titleSection h2 {
+    font-size: 26px;
+  }
+  #service .serviceContainer .bodySectionService .service {
+    margin: 0;
+  }
+  #service .serviceContainer .bodySectionService .service .imageService {
+    margin-bottom: .7rem;
+  }
+  #service .serviceContainer .bodySectionService .service .infoService h3 {
+    font-size: 22px;
+  }
+  #service .serviceContainer .bodySectionService .service .infoService p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #service .serviceContainer .titleSection h2 {
+    font-size: 28px;
+  }
+  #service .serviceContainer .bodySectionService .service {
+    margin: 0 1.7rem;
+  }
+  #service .serviceContainer .bodySectionService .service .imageService {
+    margin-bottom: 1rem;
+  }
+  #service .serviceContainer .bodySectionService .service .imageService img {
+    max-height: 320px;
+  }
+  #service .serviceContainer .bodySectionService .service .infoService h3 {
+    font-size: 24px;
+  }
+  #service .serviceContainer .bodySectionService .service .infoService p {
+    font-size: 16px;
+  }
+}
+
+/*FeaturedWork*/
+#featuredWorks .container .containerProjectWorks .titleSection {
+  text-align: center;
+  color: #4B4D4C;
+}
+
+#featuredWorks .container .containerProjectWorks .project {
+  height: 100%;
+  position: relative;
+}
+
+#featuredWorks .container .containerProjectWorks .project:hover .previewWebsite {
+  transition: all .3s ease;
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+#featuredWorks .container .containerProjectWorks .project .previewProjectImages {
+  height: 100%;
+}
+
+#featuredWorks .container .containerProjectWorks .project .previewProjectImages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+#featuredWorks .container .containerProjectWorks .project .previewWebsite {
+  padding: .5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translate(0%, 50%);
+  transition: all .3s ease;
+  opacity: 0;
+}
+
+#featuredWorks .container .containerProjectWorks .project .previewWebsite .detailWebsite {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  width: 100%;
+  color: #4B4D4C;
+}
+
+#featuredWorks .container .containerProjectWorks .project .previewWebsite .detailWebsite h5 {
+  font-weight: 600;
+}
+
+#featuredWorks .container .containerProjectWorks .project .previewWebsite .detailWebsite a {
+  text-decoration: none;
+  color: #4B4D4C;
+  font-weight: 400;
+}
+
+/*End FeaturedWork*/
+/*Responsive Featured Works*/
+@media screen and (min-width: 0px) {
+  #featuredWorks {
+    padding: 7rem 0;
+  }
+  #featuredWorks .container .containerProjectWorks .titleSection {
+    margin-bottom: 1.5rem;
+  }
+  #featuredWorks .container .containerProjectWorks .titleSection h2 {
+    font-size: 22px;
+  }
+  #featuredWorks .container .containerProjectWorks .project .previewWebsite .detailWebsite h5 {
+    font-size: 8px;
+  }
+  #featuredWorks .container .containerProjectWorks .project .previewWebsite .detailWebsite a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #featuredWorks .container .containerProjectWorks .right {
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #featuredWorks .container .containerProjectWorks .titleSection {
+    margin-bottom: 2rem;
+  }
+  #featuredWorks .container .containerProjectWorks .titleSection h2 {
+    font-size: 26px;
+  }
+  #featuredWorks .container .containerProjectWorks .project .previewWebsite .detailWebsite h5 {
+    font-size: 10px;
+  }
+  #featuredWorks .container .containerProjectWorks .project .previewWebsite .detailWebsite a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #featuredWorks .container .containerProjectWorks .titleSection h2 {
+    font-size: 28px;
+  }
+  #featuredWorks .container .containerProjectWorks .col-12 .project .previewWebsite {
+    padding: 1rem;
+  }
+  #featuredWorks .container .containerProjectWorks .col-12 .project .previewWebsite .detailWebsite h5 {
+    font-size: 16px;
+  }
+  #featuredWorks .container .containerProjectWorks .col-12 .project .previewWebsite .detailWebsite a {
+    font-size: 12px;
+  }
+  #featuredWorks .container .containerProjectWorks .col-6 .project .previewWebsite {
+    padding: .5rem;
+  }
+  #featuredWorks .container .containerProjectWorks .col-6 .project .previewWebsite .detailWebsite h5 {
+    font-size: 12px;
+  }
+  #featuredWorks .container .containerProjectWorks .col-6 .project .previewWebsite .detailWebsite a {
+    font-size: 10px;
+  }
+}
+
+/*End Responsive Featured Works*/
+#skills {
+  background-color: #fff;
+}
+
+#skills .container .skillsContainer .titleSection {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#skills .container .skillsContainer .titleSection h2 {
+  font-size: 22px;
+}
+
+#skills .container .skillsContainer .skillWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#skills .container .skillsContainer .skillWrapper .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#skills .container .skillsContainer .skillWrapper .skills img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 0px) {
+  #skills {
+    padding: 7rem 0;
+  }
+  #skills .container .skillsContainer .titleSection {
+    margin-bottom: 1.5rem;
+  }
+  #skills .container .skillsContainer .titleSection h2 {
+    font-size: 22px;
+  }
+  #skills .container .skillsContainer .skills {
+    margin: .5rem 0;
+  }
+  #skills .container .skillsContainer .skills p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #skills .container .skillsContainer .titleSection {
+    margin-bottom: 2rem;
+  }
+  #skills .container .skillsContainer .titleSection h2 {
+    font-size: 26px;
+  }
+  #skills .container .skillsContainer .skillWrapper .justify-content-center {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #skills .container .skillsContainer .titleSection h2 {
+    font-size: 28px;
+  }
+  #skills .container .skillsContainer .skillWrapper .justify-content-center {
+    width: 60%;
+  }
+  #skills .container .skillsContainer .skillWrapper .skills {
+    margin: 1rem 0;
+  }
+  #skills .container .skillsContainer .skillWrapper .skills p {
+    font-size: 14px;
   }
 }

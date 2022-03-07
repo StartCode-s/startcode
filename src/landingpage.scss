@@ -510,27 +510,34 @@ $primaryCollor :#5E4BF5;
     .serviceContainer {
         .titleSection {
             text-align: center;
+            color: #4B4D4C;
             .textPrimary {
                 color: $primaryCollor;
                 font-weight: 600;
             }
         }
         .bodySectionService {
+            .col-6,.col-12 {
+                transition: .5s ease;
+            }
             .service {
                 .imageService {
                     img {
                         width: 100%;
+                        transition: .3s ease;
                     }
                 }
                 .infoService {
                     color: #4B4D4C;
+                    h3 {
+                        font-weight: 500;
+                    }
                 }
             }
         }
     }
 }
-
-/*Responsive*/
+/*Responsive Service*/
 @media screen and (min-width : 0px) {
     #service {
         padding: 7rem 0;
@@ -554,6 +561,336 @@ $primaryCollor :#5E4BF5;
                         }
                         p {
                             font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 992px) {
+    #service {
+        .serviceContainer {
+            .titleSection {
+                margin-bottom: 2rem;
+                h2 {
+                    font-size: 26px;
+                }
+            }
+            .bodySectionService {
+                .service {
+                    margin: 0;
+                    .imageService {
+                        margin-bottom: .7rem;
+                    }
+                    .infoService {
+                        h3 {
+                            font-size: 22px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 1400px) {
+    #service {
+        .serviceContainer {
+            .titleSection {
+                h2 {
+                    font-size: 28px;
+                }
+            }
+            .bodySectionService {
+                .service {
+                    margin: 0 1.7rem;
+                    .imageService {
+                        margin-bottom: 1rem;
+                        img {
+                            max-height: 320px;
+                        }
+                    }
+                    .infoService {
+                        h3 {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*FeaturedWork*/
+#featuredWorks {
+    .container {
+        .containerProjectWorks {
+            .titleSection {
+                text-align: center;
+                color: #4B4D4C;
+            }
+            .project {
+                height: 100%;
+                position: relative;
+
+                &:hover {
+                    .previewWebsite {
+                        transition: all .3s ease;
+                        transform: translate(0%,0%);
+                        opacity: 1
+                    }
+                }
+                .previewProjectImages {
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 10px;
+                    }
+                }
+                
+                .previewWebsite {
+                    padding: .5rem;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    transform: translate(0%,50%);
+                    transition: all .3s ease;
+                    opacity: 0;
+                    
+                    .detailWebsite {
+                        background-color: $white;
+                        padding: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-radius: 4px;
+                        width: 100%;
+                        color: #4B4D4C;
+                        h5 {
+                            font-weight: 600;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #4B4D4C;
+                            font-weight: 400;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+/*End FeaturedWork*/
+
+/*Responsive Featured Works*/
+@media screen and (min-width : 0px) {
+    #featuredWorks {
+        padding: 7rem 0;
+        .container {
+            .containerProjectWorks {
+                .titleSection {
+                    margin-bottom: 1.5rem;
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+                .project {
+                    .previewWebsite {
+                        .detailWebsite {
+                            h5 {
+                                font-size: 8px;
+                            }
+                            a {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 768px) {
+    #featuredWorks {
+        .container {
+            .containerProjectWorks {
+                .right {
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 992px) {
+    #featuredWorks {
+        .container {
+            .containerProjectWorks {
+                .titleSection {
+                    margin-bottom: 2rem;
+                    h2 {
+                        font-size: 26px;
+                    }
+                }
+                .project {
+                    .previewWebsite {
+                        .detailWebsite {
+                            h5 {
+                                font-size: 10px;
+                            }
+                            a {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width :1200px) {
+    #featuredWorks {
+        .container {
+            .containerProjectWorks {
+                .titleSection {
+                    h2 {
+                        font-size: 28px;
+                    }
+                }
+                .col-12 {
+                    .project {
+                        .previewWebsite {
+                            padding: 1rem;
+                            .detailWebsite {
+                                h5 {
+                                    font-size: 16px;
+                                }
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-6 {
+                    .project {
+                        .previewWebsite {
+                            padding: .5rem;
+                            .detailWebsite {
+                                h5 {
+                                    font-size: 12px;
+                                }
+                                a {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*End Responsive Featured Works*/
+
+
+#skills {
+    background-color: $white;
+    .container {
+        .skillsContainer {
+            .titleSection {
+                margin-bottom: 1.5rem;
+                text-align: center;
+                h2 {
+                    font-size: 22px;
+                }
+            }
+            .skillWrapper {
+                display: flex;
+                justify-content: center;
+                .skills {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 0px) {
+    #skills {
+        padding: 7rem 0;
+        .container {
+            .skillsContainer {
+                .titleSection {
+                    margin-bottom: 1.5rem;
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+                .skills {
+                    margin: .5rem 0;
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 992px) {
+    #skills {
+        .container {
+            .skillsContainer {
+                .titleSection {
+                    margin-bottom: 2rem;
+                    h2 {
+                        font-size: 26px;
+                    }
+                }
+                .skillWrapper {
+                    .justify-content-center {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 1200px) {
+    #skills {
+        .container {
+            .skillsContainer {
+                .titleSection {
+                    h2 {
+                        font-size: 28px;
+                    }
+                }
+                .skillWrapper {
+                    .justify-content-center {
+                        width: 60%;
+                    }
+                    .skills {
+                        margin: 1rem 0;
+                        p {
+                            font-size: 14px;
                         }
                     }
                 }
