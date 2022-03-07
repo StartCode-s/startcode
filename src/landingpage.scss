@@ -60,21 +60,13 @@ $primaryCollor :#5E4BF5;
                     border: 1px solid rgb(208, 208, 208);
                     border-radius: 10px;
                     transition: .3s ease;
+                    color: #373737;
 
                     &.activeButton {
                         background-color: $primaryCollor;
                         border: 1px solid #6b58f7;
                         ion-icon {
                             color: $white;
-                        }
-                    }
-                    &:hover {
-                        background-color: $primaryCollor;
-                        border: 1px solid #6b58f7;
-                        transition: .3s ease;
-                        ion-icon {
-                            color: $white;
-                            transition: .3s ease;
                         }
                     }
                     ion-icon {
@@ -218,7 +210,24 @@ $primaryCollor :#5E4BF5;
         }
     }
 }
-
+@media screen and (max-width :576px) {
+    #app {
+        #navbarContainer {
+            .container {
+                .brand {
+                    a {
+                        .brandImages {
+                            max-width: 36px;
+                        }
+                        .nameBrand {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /*Jumbotron*/
 #app {
@@ -312,6 +321,7 @@ $primaryCollor :#5E4BF5;
     }
 }
 /*End Jumbotron*/
+
 /*Responsive Jumbotron*/
 @media screen and (min-width : 0px) {
     #app {
@@ -450,7 +460,7 @@ $primaryCollor :#5E4BF5;
         }
     }
 }
-@media screen and (max-width :567px) {
+@media screen and (max-width :576px) {
     .review {
         .profileUser {
             img {
@@ -491,3 +501,61 @@ $primaryCollor :#5E4BF5;
     }
 }
 /*Responsive Jumbotron*/
+
+
+
+/*Service Section*/
+#service {
+    background-color: $white;
+    .serviceContainer {
+        .titleSection {
+            text-align: center;
+            .textPrimary {
+                color: $primaryCollor;
+                font-weight: 600;
+            }
+        }
+        .bodySectionService {
+            .service {
+                .imageService {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .infoService {
+                    color: #4B4D4C;
+                }
+            }
+        }
+    }
+}
+
+/*Responsive*/
+@media screen and (min-width : 0px) {
+    #service {
+        padding: 7rem 0;
+        .serviceContainer {
+            .titleSection {
+                .textPrimary {
+                }
+            }
+            .bodySectionService {
+                .service {
+                    margin: 1rem 0;
+                    .imageService {
+                        margin-bottom: .7rem;
+                    }
+                    .infoService {
+                        h3 {
+                            font-size: 16px;
+                            margin-bottom: .5rem;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

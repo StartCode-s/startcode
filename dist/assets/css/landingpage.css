@@ -59,6 +59,7 @@ body {
   border: 1px solid #d0d0d0;
   border-radius: 10px;
   transition: .3s ease;
+  color: #373737;
 }
 
 #app #navbarContainer .container .navMenu .buttonNavbarMenu.activeButton {
@@ -68,17 +69,6 @@ body {
 
 #app #navbarContainer .container .navMenu .buttonNavbarMenu.activeButton ion-icon {
   color: #fff;
-}
-
-#app #navbarContainer .container .navMenu .buttonNavbarMenu:hover {
-  background-color: #5E4BF5;
-  border: 1px solid #6b58f7;
-  transition: .3s ease;
-}
-
-#app #navbarContainer .container .navMenu .buttonNavbarMenu:hover ion-icon {
-  color: #fff;
-  transition: .3s ease;
 }
 
 #app #navbarContainer .container .navMenu .buttonNavbarMenu ion-icon {
@@ -192,6 +182,15 @@ body {
   #app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu.active {
     color: #5E4BF5;
     font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #app #navbarContainer .container .brand a .brandImages {
+    max-width: 36px;
+  }
+  #app #navbarContainer .container .brand a .nameBrand {
+    font-size: 22px;
   }
 }
 
@@ -382,7 +381,7 @@ body {
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 576px) {
   .review .profileUser img {
     max-width: 24px !important;
   }
@@ -414,3 +413,44 @@ body {
 }
 
 /*Responsive Jumbotron*/
+/*Service Section*/
+#service {
+  background-color: #fff;
+}
+
+#service .serviceContainer .titleSection {
+  text-align: center;
+}
+
+#service .serviceContainer .titleSection .textPrimary {
+  color: #5E4BF5;
+  font-weight: 600;
+}
+
+#service .serviceContainer .bodySectionService .service .imageService img {
+  width: 100%;
+}
+
+#service .serviceContainer .bodySectionService .service .infoService {
+  color: #4B4D4C;
+}
+
+/*Responsive*/
+@media screen and (min-width: 0px) {
+  #service {
+    padding: 7rem 0;
+  }
+  #service .serviceContainer .bodySectionService .service {
+    margin: 1rem 0;
+  }
+  #service .serviceContainer .bodySectionService .service .imageService {
+    margin-bottom: .7rem;
+  }
+  #service .serviceContainer .bodySectionService .service .infoService h3 {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+  #service .serviceContainer .bodySectionService .service .infoService p {
+    font-size: 12px;
+  }
+}
