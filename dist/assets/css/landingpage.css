@@ -639,6 +639,7 @@ body {
 }
 
 /*End Responsive Featured Works*/
+/*Skills*/
 #skills {
   background-color: #fff;
 }
@@ -650,6 +651,7 @@ body {
 
 #skills .container .skillsContainer .titleSection h2 {
   font-size: 22px;
+  color: #4B4D4C;
 }
 
 #skills .container .skillsContainer .skillWrapper {
@@ -670,6 +672,7 @@ body {
   margin-bottom: .5rem;
 }
 
+/*Skills Responsive*/
 @media screen and (min-width: 0px) {
   #skills {
     padding: 7rem 0;
@@ -712,5 +715,153 @@ body {
   }
   #skills .container .skillsContainer .skillWrapper .skills p {
     font-size: 14px;
+  }
+}
+
+/*End Skills*/
+/*Testimoni*/
+#testimoni {
+  padding: 7rem 0;
+}
+
+#testimoni .container {
+  position: relative;
+}
+
+#testimoni .container .titleSection {
+  text-align: center;
+  color: #4B4D4C;
+}
+
+#testimoni .container .wrapperTestimoni {
+  display: flex;
+}
+
+#testimoni .container .wrapperTestimoni .testimoni {
+  text-align: center;
+  width: 100%;
+}
+
+#testimoni .container .wrapperTestimoni .testimoni .avatarTestimoni {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimoni .container .wrapperTestimoni .testimoni .avatarTestimoni img {
+  width: 100%;
+  max-width: 56px;
+  border-radius: 50%;
+}
+
+#testimoni .container .wrapperTestimoni .testimoni .comment p {
+  color: #4E5462;
+}
+
+#testimoni .container .wrapperTestimoni .testimoni .name {
+  color: #5E4BF5;
+}
+
+#testimoni .container .slick-slider-dots {
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  width: 100%;
+}
+
+#testimoni .container .slick-slider-dots ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#testimoni .container .slick-slider-dots ul li {
+  margin: 0 4px;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimoni .container .slick-slider-dots ul li button {
+  background: #C4C4C4;
+  height: 8px;
+  width: 8px;
+  overflow: hidden;
+  color: #C4C4C4;
+  border: none;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+#testimoni .container .slick-slider-dots ul li button::before {
+  display: none;
+}
+
+#testimoni .container .slick-slider-dots ul li.slick-active button {
+  background: #5E4BF5;
+  color: #5E4BF5;
+  width: 28px;
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+@media screen and (min-width: 0px) {
+  #testimoni {
+    padding: 7rem 0;
+  }
+  #testimoni .container .titleSection {
+    margin-bottom: 1.5rem;
+  }
+  #testimoni .container .titleSection h2 {
+    font-size: 22px;
+  }
+  #testimoni .container .wrapperTestimoni .testimoni {
+    margin: 0 1.5rem;
+  }
+  #testimoni .container .wrapperTestimoni .testimoni .avatarTestimoni {
+    margin-bottom: 1rem;
+  }
+  #testimoni .container .wrapperTestimoni .testimoni .comment {
+    margin-bottom: 1rem;
+  }
+  #testimoni .container .wrapperTestimoni .testimoni .comment p {
+    font-size: 12px;
+  }
+  #testimoni .container .wrapperTestimoni .testimoni .name {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #testimoni .container .wrapperTestimoni .testimoni .comment p {
+    font-size: 14px;
+  }
+  #testimoni .container .wrapperTestimoni .testimoni .name {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #testimoni .container .titleSection {
+    margin-bottom: 2rem;
+  }
+  #testimoni .container .titleSection h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #testimoni .container .titleSection h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #testimoni .container .wrapperTestimoni .testimoni .comment p {
+    font-size: 16px;
   }
 }

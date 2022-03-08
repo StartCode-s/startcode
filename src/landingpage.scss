@@ -803,7 +803,7 @@ $primaryCollor :#5E4BF5;
 }
 /*End Responsive Featured Works*/
 
-
+/*Skills*/
 #skills {
     background-color: $white;
     .container {
@@ -813,6 +813,7 @@ $primaryCollor :#5E4BF5;
                 text-align: center;
                 h2 {
                     font-size: 22px;
+                    color: #4B4D4C;
                 }
             }
             .skillWrapper {
@@ -834,6 +835,7 @@ $primaryCollor :#5E4BF5;
     }
 }
 
+/*Skills Responsive*/
 @media screen and (min-width : 0px) {
     #skills {
         padding: 7rem 0;
@@ -891,6 +893,184 @@ $primaryCollor :#5E4BF5;
                         margin: 1rem 0;
                         p {
                             font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*End Skills*/
+
+
+
+/*Testimoni*/
+#testimoni {
+    padding: 7rem 0;
+    .container {
+        position: relative;
+        .titleSection {
+            text-align: center;
+            color: #4B4D4C;
+        }
+        .wrapperTestimoni {
+            display: flex;
+            .testimoni {
+                text-align: center;
+                width: 100%;
+                .avatarTestimoni {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                        max-width: 56px;
+                        border-radius: 50%;
+                    }
+                }
+                .comment {
+                    p {
+                        color: #4E5462;
+                    }
+                }
+                .name {
+                    color: $primaryCollor;
+                }
+            }
+        }
+        .slick-slider-dots{
+            position: absolute;
+            bottom: -20px;
+            display: flex;
+            width: 100%;
+            
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    margin: 0 4px;
+                    display: flex;
+                    width: fit-content;
+                    justify-content: center;
+                    align-items: center;
+                    button {
+                        background: #C4C4C4;
+                        height: 8px;
+                        width: 8px;
+                        overflow: hidden;
+                        color: #C4C4C4;
+                        border: none;
+                        border-radius: 50%;
+                        transition: all .3s ease;
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    &.slick-active {
+                        button {
+                            background: $primaryCollor;
+                            color: $primaryCollor;
+                            width: 28px;
+                            border-radius: 10px;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+@media screen and (min-width : 0px) {
+    #testimoni {
+        padding: 7rem 0;
+        .container {
+            .titleSection {
+                margin-bottom: 1.5rem;
+                h2 {
+                    font-size: 22px;
+                }
+            }
+            .wrapperTestimoni {
+                .testimoni {
+                    margin: 0 1.5rem;
+                    .avatarTestimoni {
+                        margin-bottom: 1rem;
+                        img {
+                        }
+                    }
+                    .comment {
+                        margin-bottom: 1rem;
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                    .name {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 576px) {
+    #testimoni {
+        .container {
+            .wrapperTestimoni {
+                .testimoni {
+                    .comment {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                    .name {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 992px) {
+    #testimoni {
+        .container {
+            .titleSection {
+                margin-bottom: 2rem;
+                h2 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 1200px) {
+    #testimoni {
+        .container {
+            .titleSection {
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1400px) {
+    #testimoni {
+        .container {
+            .wrapperTestimoni {
+                .testimoni {
+                    .comment {
+                        p {
+                            font-size: 16px;
                         }
                     }
                 }
