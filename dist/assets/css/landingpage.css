@@ -12,6 +12,10 @@ body {
 }
 
 /*Variable Collor*/
+#app {
+  overflow-x: hidden;
+}
+
 /*Navbar Style*/
 #app #navbarContainer {
   padding: 1.4rem 0;
