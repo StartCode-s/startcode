@@ -324,6 +324,7 @@
         </div>
         <!--EndSkills-->
 
+        <!--Testimoni-->
         <div id="testimoni">
             <div class="container">
                 <div class="titleSection">
@@ -370,6 +371,80 @@
                 <div class="slick-slider-dots"></div>
             </div>
         </div>
+        <!--End Testimoni-->
+
+        <!--Contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="wrapperContant">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-5">
+                            <div class="textContact">
+                                <h1>Get In Touch With Us Now!</h1>
+                                <p>Various Reasons to Choose StartCode As Your Business Partner, Good & Convenient Service With StartCode. we are ready to serve you with kind and fast response!</p>
+                                <div class="wrapperButtonContact">
+                                    <a href="#">Get Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="imagesVector">
+                                <img src="./assets/images/contactVectorIcon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--EndContact-->
+
+
+        <!--Team-->
+        <div id="team">
+            <div class="container">
+                <div class="titleSection">
+                    <h2>Our Team</h2>
+                </div>
+                <div class="wrapperTeam d-flex justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-3">
+                            <div class="team">
+                                <div class="imagesTeam">
+                                    <img src="./assets/images/Avatar/1.jpg" alt="">
+                                </div>
+                                <p>Reksa Prayoga</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="team">
+                                <div class="imagesTeam">
+                                    <img src="./assets/images/Avatar/2.jpg" alt="">
+                                </div>
+                                <p>M Alfito Rahman</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="team">
+                                <div class="imagesTeam">
+                                    <img src="./assets/images/Avatar/3.jpg" alt="">
+                                </div>
+                                <p>Yoga Saputra</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="team">
+                                <div class="imagesTeam">
+                                    <img src="./assets/images/Avatar/4.jpg" alt="">
+                                </div>
+                                <p>Dwi Febryansyah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Team-->
+
     </div>
     
 
@@ -407,30 +482,30 @@
     </script>
 
     <script>
-        
         $('.wrapperTestimoni').slick({
+        infinite: true,
         dots: true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         appendDots: $('.slick-slider-dots'),
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
                 {
                 breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    infinite: true,
-                    dots: true
-                }
-            },
-                {
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                    {
                 breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
+                    settings: {
+                        slidesToShow: 1,
+                    }
                 }
-            }
-        ]
+            ]
         });
     </script>
 </body>
