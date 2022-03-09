@@ -133,6 +133,9 @@ body {
   #app .testimoniForm .formAddReview form .selectProfile label {
     font-size: 14px;
   }
+  #app .testimoniForm .formAddReview form .selectProfile .form-control {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
