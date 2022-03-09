@@ -65,6 +65,15 @@ $primaryCollor :#5E4BF5;
                         padding: 1rem 0;
                     }
                 }
+                .selectProfile {
+                    margin-top: 1.5rem;
+                    label {
+                        color: #a3a9ae;
+                    }
+                    .form-control {
+                        border: 1px solid #edf1f4;
+                    }
+                }
 
                 .buttonSubmit {
                     width: 100%;
@@ -133,6 +142,11 @@ $primaryCollor :#5E4BF5;
                         .form-control {
                             font-size: 14px;
                         }
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+                    .selectProfile {
                         label {
                             font-size: 14px;
                         }

@@ -65,6 +65,18 @@ body {
   padding: 1rem 0;
 }
 
+#app .testimoniForm .formAddReview form .selectProfile {
+  margin-top: 1.5rem;
+}
+
+#app .testimoniForm .formAddReview form .selectProfile label {
+  color: #a3a9ae;
+}
+
+#app .testimoniForm .formAddReview form .selectProfile .form-control {
+  border: 1px solid #edf1f4;
+}
+
 #app .testimoniForm .formAddReview form .buttonSubmit {
   width: 100%;
   margin-top: 3rem;
@@ -116,6 +128,9 @@ body {
     font-size: 14px;
   }
   #app .testimoniForm .formAddReview form .form-floating label {
+    font-size: 14px;
+  }
+  #app .testimoniForm .formAddReview form .selectProfile label {
     font-size: 14px;
   }
 }
