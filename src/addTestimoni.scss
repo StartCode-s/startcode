@@ -90,7 +90,6 @@ $primaryCollor :#5E4BF5;
         .testimoniForm {
             padding: 3rem;
             border-radius: 40px;
-            margin: 0 2rem;
             h1 {
                 font-size: 26px;
                 line-height: 36px;
@@ -117,7 +116,7 @@ $primaryCollor :#5E4BF5;
 @media screen and (max-width : 576px) {
     #app {
         .testimoniForm {
-            padding: 3rem;
+            padding: 2rem;
             border-radius: 40px;
             h1 {
                 font-size: 22px;

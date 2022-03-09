@@ -84,7 +84,6 @@ body {
   #app .testimoniForm {
     padding: 3rem;
     border-radius: 40px;
-    margin: 0 2rem;
   }
   #app .testimoniForm h1 {
     font-size: 26px;
@@ -101,7 +100,7 @@ body {
 
 @media screen and (max-width: 576px) {
   #app .testimoniForm {
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 40px;
   }
   #app .testimoniForm h1 {
