@@ -17,7 +17,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #app .testimoniForm {
@@ -25,6 +24,8 @@ body {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   border-radius: 40px;
+  height: fit-content;
+  margin: 2rem 1rem;
 }
 
 #app .testimoniForm h1 {

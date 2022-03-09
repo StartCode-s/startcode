@@ -20,12 +20,13 @@ $primaryCollor :#5E4BF5;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     .testimoniForm {
         padding: 3rem;
         background-color: $white;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
         border-radius: 40px;
+        height: fit-content;
+        margin: 2rem 1rem;
 
         h1 {
             color: #3d4852;
