@@ -55,6 +55,7 @@ $primaryCollor :#5E4BF5;
                         width: 100%;
                         max-width: 38px;
                         margin-right: .7rem;
+                        transition: all .5s ease;
                     }
                     .nameBrand {
                         font-weight: 600;
@@ -98,6 +99,10 @@ $primaryCollor :#5E4BF5;
                                 text-decoration: none;
                                 color: #4B4D4C;
                                 font-weight: 300;
+                                transition: all .3s ease;
+                                &.active {
+                                    transition: all .3s ease;
+                                }
                             }
                         }
                     }
@@ -124,7 +129,7 @@ $primaryCollor :#5E4BF5;
                         padding: 2rem;
                         position: absolute;
                         left: -100px;
-                        top: 50%;
+                        top: 300%;
                         background-color: $white;
                         transition: left .5s ease;
                         border-radius: 20px;
@@ -1272,7 +1277,7 @@ $primaryCollor :#5E4BF5;
             }
             .wrapperTeam {
                 .justify-content-center {
-                    max-width: 70%;
+                    max-width: 60%;
                 }
                 .team {
                     margin: 0;
@@ -1284,6 +1289,128 @@ $primaryCollor :#5E4BF5;
                     }
                     p {
                         font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: $primaryCollor;
+    svg {
+        width: 100%;
+    }
+    .container {
+        .wrapperContentFooter {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            .footerContent {
+                color: $white;
+                .brand {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: .7rem;
+                    .logoBrand {
+                        img {
+                            width: 100%;
+                            max-width: 32px;
+                        }
+                    }
+                    .nameBrand {
+                        color: $white;
+                        font-weight: 700;
+                        text-decoration: none;
+                        margin-left: .5rem;
+                    }
+                }
+                .addres {
+                    max-width: 300px;
+                    margin-bottom: .7rem;
+                }
+                .wrapperSocialMedia {
+                    .socialMedia{
+                        color: $white;
+                        text-decoration: none;
+                        font-size: 24px;
+
+                        &:not(:last-child) {
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+                .labelService {
+                    margin-bottom: .5rem;
+                }
+                .wrapperService {
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        padding: .2rem 0;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+    .copyRight {
+        text-align: center;
+        color: $white;
+        font-weight: 400;
+        padding: 1rem;
+        border-top: .5px solid $white;
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width : 576px) {
+    footer {
+        background-color: $primaryCollor;
+        .container {
+            .wrapperContentFooter {
+                flex-direction: column;
+                align-items: flex-start;
+                .footerContent {
+                    margin-bottom: 1rem;
+                    .brand {
+                        .logoBrand {
+                            img {
+                                width: 100%;
+                                max-width: 38px;
+                            }
+                        }
+                        .nameBrand {
+                            color: $white;
+                            font-weight: 700;
+                            text-decoration: none;
+                            margin-left: .5rem;
+                        }
+                    }
+                    .addres {
+                        max-width: 300px;
+                    }
+                    
+                    
+                    .labelService {
+                        margin-bottom: .5rem;
+                    }
+                    .wrapperService {
+                        display: flex;
+                        flex-direction: column;
+                        a {
+                            color: $white;
+                            text-decoration: none;
+                            padding: .2rem 0;
+                            font-weight: 300;
+                        }
                     }
                 }
             }

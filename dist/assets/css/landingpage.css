@@ -51,6 +51,7 @@ body {
   width: 100%;
   max-width: 38px;
   margin-right: .7rem;
+  transition: all .5s ease;
 }
 
 #app #navbarContainer .container .brand a .nameBrand {
@@ -96,6 +97,11 @@ body {
   text-decoration: none;
   color: #4B4D4C;
   font-weight: 300;
+  transition: all .3s ease;
+}
+
+#app #navbarContainer .container .navMenu .containerMenu .wrapperMenu .list-menu .nav-menu.active {
+  transition: all .3s ease;
 }
 
 /*Responsive Navbar*/
@@ -116,7 +122,7 @@ body {
     padding: 2rem;
     position: absolute;
     left: -100px;
-    top: 50%;
+    top: 300%;
     background-color: #fff;
     transition: left .5s ease;
     border-radius: 20px;
@@ -1009,7 +1015,7 @@ body {
     font-size: 28px;
   }
   #team .container .wrapperTeam .justify-content-center {
-    max-width: 70%;
+    max-width: 60%;
   }
   #team .container .wrapperTeam .team {
     margin: 0;
@@ -1022,5 +1028,125 @@ body {
   }
   #team .container .wrapperTeam .team p {
     font-size: 16px;
+  }
+}
+
+footer {
+  background-color: #5E4BF5;
+}
+
+footer svg {
+  width: 100%;
+}
+
+footer .container .wrapperContentFooter {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+footer .container .wrapperContentFooter .footerContent {
+  color: #fff;
+}
+
+footer .container .wrapperContentFooter .footerContent .brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: .7rem;
+}
+
+footer .container .wrapperContentFooter .footerContent .brand .logoBrand img {
+  width: 100%;
+  max-width: 32px;
+}
+
+footer .container .wrapperContentFooter .footerContent .brand .nameBrand {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: .5rem;
+}
+
+footer .container .wrapperContentFooter .footerContent .addres {
+  max-width: 300px;
+  margin-bottom: .7rem;
+}
+
+footer .container .wrapperContentFooter .footerContent .wrapperSocialMedia .socialMedia {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+footer .container .wrapperContentFooter .footerContent .wrapperSocialMedia .socialMedia:not(:last-child) {
+  margin-right: .5rem;
+}
+
+footer .container .wrapperContentFooter .footerContent .labelService {
+  margin-bottom: .5rem;
+}
+
+footer .container .wrapperContentFooter .footerContent .wrapperService {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .container .wrapperContentFooter .footerContent .wrapperService a {
+  color: #fff;
+  text-decoration: none;
+  padding: .2rem 0;
+  font-weight: 300;
+}
+
+footer .copyRight {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  padding: 1rem;
+  border-top: 0.5px solid #fff;
+}
+
+footer .copyRight p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    background-color: #5E4BF5;
+  }
+  footer .container .wrapperContentFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .container .wrapperContentFooter .footerContent {
+    margin-bottom: 1rem;
+  }
+  footer .container .wrapperContentFooter .footerContent .brand .logoBrand img {
+    width: 100%;
+    max-width: 38px;
+  }
+  footer .container .wrapperContentFooter .footerContent .brand .nameBrand {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: .5rem;
+  }
+  footer .container .wrapperContentFooter .footerContent .addres {
+    max-width: 300px;
+  }
+  footer .container .wrapperContentFooter .footerContent .labelService {
+    margin-bottom: .5rem;
+  }
+  footer .container .wrapperContentFooter .footerContent .wrapperService {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container .wrapperContentFooter .footerContent .wrapperService a {
+    color: #fff;
+    text-decoration: none;
+    padding: .2rem 0;
+    font-weight: 300;
   }
 }
