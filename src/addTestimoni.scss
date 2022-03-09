@@ -20,6 +20,22 @@ $primaryCollor :#5E4BF5;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .logoStartCode {
+        text-align: center;
+        margin: 2rem 1rem 0 1rem;
+        img {
+            width: 100%;
+            max-width: 58px;
+            margin-bottom: .5rem;
+        }
+        h1 {
+            color: $primaryCollor;
+            font-weight: 700;
+        }
+    }
     .testimoniForm {
         padding: 3rem;
         background-color: $white;
