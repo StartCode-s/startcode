@@ -70,23 +70,18 @@ body {
   align-items: center;
   justify-content: center;
   padding: 6px 10px;
-  border: 1px solid #d0d0d0;
-  border-radius: 10px;
+  border: none;
+  border-radius: 6px;
   transition: .3s ease;
   color: #373737;
 }
 
-#app #navbarContainer .container .navMenu .buttonNavbarMenu.activeButton {
-  background-color: #5E4BF5;
-  border: 1px solid #6b58f7;
+#app #navbarContainer .container .navMenu .buttonNavbarMenu.activeButton i {
+  color: #5E4BF5;
 }
 
-#app #navbarContainer .container .navMenu .buttonNavbarMenu.activeButton ion-icon {
-  color: #fff;
-}
-
-#app #navbarContainer .container .navMenu .buttonNavbarMenu ion-icon {
-  font-size: 32px;
+#app #navbarContainer .container .navMenu .buttonNavbarMenu i {
+  font-size: 28px;
   transition: .3s ease;
 }
 
@@ -206,7 +201,7 @@ body {
 
 @media screen and (max-width: 576px) {
   #app #navbarContainer .container .brand a .brandImages {
-    max-width: 36px;
+    max-width: 28px;
   }
   #app #navbarContainer .container .brand a .nameBrand {
     font-size: 22px;
@@ -394,6 +389,9 @@ body {
   }
   #jumbotron .container .wrapperContent .partnerWrapper .whiteCard {
     max-width: 80%;
+  }
+  #jumbotron .container .wrapperContent .partnerWrapper .whiteCard p {
+    font-size: 14px;
   }
   #jumbotron .container .wrapperContent .partnerWrapper .whiteCard h5 {
     font-size: 16px;
