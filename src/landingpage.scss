@@ -909,6 +909,8 @@ $primaryCollor :#5E4BF5;
                         max-width: 64px;
                         max-height: 64px;
                         border-radius: 50%;
+                        object-fit: cover;
+                        object-position: center;
                     }
                 }
                 .comment {
@@ -1149,23 +1151,61 @@ $primaryCollor :#5E4BF5;
     padding: 7rem 0;
     .container {
         .titleSection {
-            text-align: center;
             color: #4B4D4C;
         }
-        .wrapperTeam {
-            .team {
+        .containerTeam {
+            .buttonControl {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                .imagesTeam {
-                    img {
-                        width: 100%;
-                        border-radius: 50%;
+                justify-content: flex-end;
+                margin-bottom: 2rem;
+                .arrow {
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 .4rem;
+                    background: $primaryCollor;
+                    border-radius: 50%;
+                    ion-icon {
+                        color: $white;
+                        font-size: 20px;
                     }
                 }
-                p {
-                    text-align: center;
+            }
+            .slideTeam {
+                display: flex;
+                transition: all .5s ease;
+
+                .team {
+                    background-color: $white;
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+                    transition: all .5s ease;
+
+                    .infoTeam {
+                        padding: 2rem 1.5rem;
+                        h2 {
+                            font-family: 'Jost', sans-serif !important;
+                            font-weight: 600;
+                            transition: all .5s ease;
+
+                        }
+                        p {
+                            font-family: 'Jost', sans-serif !important;
+                            font-style: italic;
+                            transition: all .5s ease;
+                        }
+                    }
+                    .imagesTeam {
+                        position: relative;
+                        bottom: 0;
+                        img {
+                            width: 100%;
+                            border-radius: 0 0 10px 10px;
+                            transition: all .5s ease;
+                        }
+                    }
                 }
             }
         }
@@ -1181,20 +1221,41 @@ $primaryCollor :#5E4BF5;
                     font-size: 22px;
                 }
             }
-            .wrapperTeam {
-                .justify-content-center {
-                    width: 100%;
-                }
-                .team {
-                    margin: 1rem 0;
-                    .imagesTeam {
-                        margin-bottom: .5rem;
-                        img {
-                            max-width: 80px;
+            .containerTeam {
+                .slideTeam {
+                    .team {
+                        &:not(:last-child) {
+                            margin-right: 1.5rem;
+                        }
+                        .infoTeam {
+                            h2 {
+                                font-size: 14px;
+                                margin-bottom: .4rem;
+                            }
+                            p {
+                                font-size: 10px;
+                            }
                         }
                     }
-                    p {
-                        font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 768px) {
+    #team {
+        .container {
+            .containerTeam {
+                .slideTeam {
+                    .team {
+                        .infoTeam {
+                            h2 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 12px;
+                            }
+                        }
                     }
                 }
             }
@@ -1210,23 +1271,6 @@ $primaryCollor :#5E4BF5;
                     font-size: 26px;
                 }
             }
-            .wrapperTeam {
-                .justify-content-center {
-                    max-width: 80%;
-                }
-                .team {
-                    margin: 0;
-                    .imagesTeam {
-                        margin-bottom: .7rem;
-                        img {
-                            max-width: 100px;
-                        }
-                    }
-                    p {
-                        font-size: 16px;
-                    }
-                }
-            }
         }
     }
 }
@@ -1238,20 +1282,38 @@ $primaryCollor :#5E4BF5;
                     font-size: 28px;
                 }
             }
-            .wrapperTeam {
-                .justify-content-center {
-                    max-width: 60%;
-                }
-                .team {
-                    margin: 0;
-                    .imagesTeam {
-                        margin-bottom: .7rem;
-                        img {
-                            max-width: 100px;
+            .containerTeam {
+                .slideTeam {
+                    padding-left: 20rem;
+                    .team {
+                        .infoTeam {
+                            h2 {
+                                font-size: 18px;
+                            }
+                            p {
+                                font-size: 14px;
+                            }
                         }
                     }
-                    p {
-                        font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 1400px) {
+    #team {
+        .container {
+            .containerTeam {
+                .slideTeam {
+                    .team {
+                        .infoTeam {
+                            h2 {
+                                font-size: 20px;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
             }
